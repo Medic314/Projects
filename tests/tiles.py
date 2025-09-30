@@ -1,8 +1,8 @@
 from tkinter import *
 window = Tk()
 window.geometry("475x500")
-tile_image = PhotoImage(file="tile_smallish.png")
-select_image = PhotoImage(file="select_small.png")
+tile_image = PhotoImage(file="tests/tile_smallish.png")
+select_image = PhotoImage(file="tests/select_small.png")
 
 canvas = Canvas(window, width=475, height=500, bg="white")
 canvas.pack()
