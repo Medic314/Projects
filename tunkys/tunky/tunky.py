@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import *
 
 window = Tk()
-photo = PhotoImage(file='logo.png')
+photo = PhotoImage(file='image/select.png')
 
 label = Label(window,
               text="bro, do you even code?",
