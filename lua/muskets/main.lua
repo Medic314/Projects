@@ -1,5 +1,5 @@
-local love =  require("love")
-local dice = require("dice")
+local love = require("love")
+require("dice")
 local screen = {
     height = love.graphics.getHeight(),
     width = love.graphics.getWidth(),
@@ -30,15 +30,15 @@ local cursor = {
 
 function love.load()
     love.window.setTitle("--= MUSKETS =--")
-    Dice(50, 50)
 end
 
 
 function love.update()
-
+    cursor.x, cursor.y = love.mouse.getPosition()
+    dice_interact(5,5,cursor.x,cursor.y)
 end
 
 
 function love.draw()
-
+    dice_draw(5, 5)
 end
